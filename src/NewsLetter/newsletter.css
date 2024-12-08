@@ -1,0 +1,97 @@
+.newsletter-container {
+    font-family: Larsseit-Regular;
+    background-color: var(--cozey-blue);
+    color: var(--cozey-white);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    input {
+        outline: none;
+        border: none;
+        padding: 10px 15px;
+        font-family: Larsseit-Bold;
+        font-size: 0.8em;
+        border-radius: 25px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        font-family: Larsseit-Regular;
+        font-size: 0.8em;
+        border-radius: 25px;
+        color: var(--cozey-white);
+        background-color: var(--cozey-black);
+        margin-left: 15px;
+        position: absolute;
+        right: 6px;
+        top: 4px;
+    }
+}
+
+/* Media Queries Start */
+@media only screen and (max-width: 375px) {
+    .newsletter-container {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 25px 15px;
+    }
+
+    #newsletter-text {
+        font-size: 0.8em;
+        flex-grow: 1;
+        text-align: justify;
+        padding-bottom: 20px;
+    }
+
+    .newsletter-input {
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 575px) {
+    .newsletter-container {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #newsletter-text {
+        font-size: 1em;
+        flex-grow: 1;
+        text-align: justify;
+        padding-bottom: 20px;
+    }
+
+    .newsletter-input {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 575px) {
+    #newsletter-text {
+        font-size: 0.9em;
+        text-align: justify;
+        padding-right: 10%;
+        width: 45%;
+    }
+
+    .newsletter-input {
+        /* width: 85%; */
+        flex-grow: 2;
+    }
+}
+
+/* Media Queries End */
