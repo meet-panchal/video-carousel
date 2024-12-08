@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Larsseit-Regular;
+  src: local("Regular"), url("./Assets/Fonts/Larsseit.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Larsseit-Light;
+  src: local("Light"), url("./Assets/Fonts/Larsseit-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Larsseit-Thin;
+  src: local("Thin"), url("./Assets/Fonts/Larsseit-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Larsseit-Bold;
+  src: local("Thin"), url("./Assets/Fonts/Larsseit-Bold.otf") format("opentype");
+}
+
+:root {
+  --cozey-blue: #69a2ff;
+  --cozey-white: #f7f8f6;
+  --cozey-black: #0b2341;
+  --cozey-grey: #d0cec4;
+  --cozey-light-blue: #a3c6ff;
+  --cozey-light-grey:#ecebe7;
+}
+
+body,p{
+  margin: 0;
+  padding: 0;
 }

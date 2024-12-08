@@ -1,0 +1,253 @@
+/* Header Strip Start */
+
+.header-strip {
+    padding: 0 25px;
+    background-color: var(--cozey-blue);
+    color: var(--cozey-white);
+    font-family: Larsseit-Regular;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-text {
+    display: flex;
+
+    #pipe {
+        padding: 0 1em;
+    }
+}
+
+.language {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Header Strip End */
+
+/* ********************************** */
+
+/* Strip Menu Start */
+
+.header-menu {
+    padding: 0 25px;
+    font-family: Larsseit-Light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cozey-white);
+}
+
+.strip-menu {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+        height: 12px;
+        width: 12px;
+    }
+}
+
+#cozey-logo {
+    font-family: Larsseit-Bold;
+    font-size: 1.5em;
+}
+
+/* Strip Menu End */
+
+/* ********************************** */
+
+/* Media Queries */
+
+@media only screen and (max-width: 375px) {
+
+    /* Header Strip Start */
+    .header-strip {
+        font-size: 0.7em;
+        padding: 0 15px;
+    }
+
+    .language {
+        margin: 0;
+    }
+
+    .strip-menu {
+        display: none;
+    }
+
+    #country-flag {
+        width: 25px;
+        height: 25px
+    }
+
+    #pipe {
+        padding: 0 0.5em;
+    }
+
+    /* Header Strip End */
+
+    /* Strip Menu Start */
+    .header-menu {
+        padding: 0 15px;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 2;
+
+        svg {
+            height: 10px;
+            width: 10px;
+        }
+    }
+
+    #cozey-logo {
+        font-family: Larsseit-Bold;
+        font-size: 1em;
+        flex: 3;
+    }
+
+
+    /* Strip Menu End */
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    /* Header Strip Start */
+
+    .header-strip {
+        font-size: 0.8em;
+    }
+
+    .strip-menu {
+        display: none;
+    }
+
+    #country-flag {
+        width: 25px;
+        height: 25px
+    }
+
+    /* Header Strip End */
+
+
+    /* Strip Menu Start */
+    .menu-items {
+        display: none;
+    }
+
+    #cozey-logo {
+        flex-grow: 3;
+    }
+
+    .icons {
+        flex-grow: 2;
+    }
+
+    /* Strip Menu End */
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Header Strip Start */
+
+    .header-strip {
+        font-size: 0.6em;
+    }
+
+
+    .strip-menu {
+        font-size: 1.2em;
+        flex-grow: 1;
+        padding: 0 25px;
+    }
+
+    #country-flag {
+        width: 25px;
+        height: 25px
+    }
+
+    /* Header Strip End */
+
+
+    /* Strip Menu Start */
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        padding: 0 60px;
+    }
+
+    .icons {
+        .special {
+            display: none;
+        }
+    }
+
+    /* Strip Menu End */
+
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Header Strip Start */
+
+    .header-strip {
+        font-size: 0.7em;
+    }
+
+    .left-text {
+        flex-grow: 1;
+        /* border: 1px solid red; */
+    }
+
+
+    .strip-menu {
+        font-size: 1.2em;
+        flex-grow: 2;
+        padding: 0 25px;
+    }
+
+    #country-flag {
+        width: 25px;
+        height: 25px
+    }
+
+    /* Header Strip End */
+
+
+    /* Strip Menu Start */
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        padding: 0 60px;
+    }
+
+    #cozey-logo {
+        flex-grow: 3;
+        /* border: 1px solid red; */
+    }
+
+    .icons {
+        .special {
+            display: none;
+        }
+    }
+
+    /* Strip Menu End */
+}
